@@ -13,9 +13,6 @@ public class SceneMaker : MonoBehaviour
         Scene NewScene = SceneManager.CreateScene("Test");
         //Scene testScene = SceneManager.activeSceneChanged<,>
 
-
-        SceneManager.MergeScenes(NewScene, SceneManager.GetActiveScene());
-
         // Resources.UnloadUnusedAssets();
         // GC.Collect();
         
