@@ -19,7 +19,8 @@ public class DataManager : MonoBehaviour
     {
         SaveData ad = new SaveData(3);
         ad.SceneNumber[0].ComponentSet = new string[]{"asd","°¡³ª´Ù","0.12" };
-       // Debug.Log(JsonUtility.ToJson(ad));
+        ad.level = 1;
+        Debug.Log(JsonUtility.ToJson(ad));
 
     }
 

@@ -6,7 +6,7 @@ using UnityEngine;
 [Serializable]
 public class SaveData
 {
-
+    public int level;
     public SceneInData[] SceneNumber;
     public class SceneInData
     {
@@ -22,7 +22,7 @@ public class SaveData
         SceneNumber = new SceneInData[sceneNum];
         for (int i = 0; i < sceneNum; i++)
         {
-            //SceneNumber
+            SceneNumber[i] = new SceneInData();
         }   
     }
 }
