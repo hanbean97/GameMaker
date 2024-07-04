@@ -6,11 +6,6 @@ public class DataManager : MonoBehaviour
 {
     private void Awake()
     {
-        
-    }
-
-    private void Start()
-    {
         SaveGame();
     }
 
@@ -18,8 +13,9 @@ public class DataManager : MonoBehaviour
     public void SaveGame()
     {
         SaveData ad = new SaveData(3);
-        ad.SceneNumber[0].ComponentSet = new string[]{"asd","°¡³ª´Ù","0.12" };
+        ad.SceneNumber.ComponentSet = new string[]{"asd","??????","0.12" };
         ad.level = 1;
+        ad.name = "obbj1";
         Debug.Log(JsonUtility.ToJson(ad));
 
     }

@@ -3,27 +3,41 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [Serializable]
 public class SaveData
 {
-    public int level;
-    public SceneInData[] SceneNumber;
-    public class SceneInData
-    {
-        public string[] ComponentSet;
-        public SceneInData()
-        {
+    UserScene[] userScenes;
 
-        }
-
-    }
-    public SaveData(int sceneNum)
+    void Setting()
     {
-        SceneNumber = new SceneInData[sceneNum];
-        for (int i = 0; i < sceneNum; i++)
-        {
-            SceneNumber[i] = new SceneInData();
-        }   
+
+
     }
 }
 
+public class UserScene
+{
+    public UserObj[] Objs;
+    public UserUI[] Uis;
+}
+
+public class UserObj
+{
+    public string name;
+    public string ImageRoute;
+    public float x, y, z;
+    public string[] propertyRoute;
+    public UserObj[] Child;
+
+}
+
+public class UserUI
+{
+    public string name;
+    public string ImageRoute;
+    public float Rectx, Recty, Rectz;
+    public string[] propertyRoute;
+    public UserUI[] Child;
+
+}
