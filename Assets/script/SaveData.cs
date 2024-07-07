@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +15,7 @@ public class SaveData
     }
 }
 
-public class UserScene
+public class UserScene// 저장 json 추가할 객체는 클래스 추가로 넣음
 {
     public UserObj[] Objs;
     public UserUI[] Uis;
