@@ -8,10 +8,11 @@ public class SaveData
 {
     UserScene[] userScenes;
 
-    void Setting()
+     SaveData(int activescene )
     {
-
-
+        userScenes = new UserScene[activescene];
+        userScenes[0].Objs[0] = new UserObj();
+        
     }
 }
 

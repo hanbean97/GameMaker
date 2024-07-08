@@ -27,7 +27,7 @@ public class SceneMaker : MonoBehaviour
         // GC.Collect();
         SceneManager.MoveGameObjectToScene(tesObj, NewScene);
 
-      Debug.Log(Application.persistentDataPath);
+      Debug.Log(Application.persistentDataPath);  
         Debug.Log(Application.streamingAssetsPath);
     }
 
