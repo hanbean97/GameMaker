@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UiDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class UserObjDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     GameObject MyObj;
     Transform canvas;
